@@ -1,0 +1,11 @@
+html {
+    font-size: 95%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1 {
+    font-size: inherit; /*Esta heredando del padre el tamaño de fuente*/
+}
+
+/*H1 se indica que herede del elemento padre mas cercano el tañaño de fuente. En este caso el 75% de html(Padre) */

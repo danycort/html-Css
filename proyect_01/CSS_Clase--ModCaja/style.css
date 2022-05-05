@@ -1,0 +1,14 @@
+/*Todo navegador tiene estilos default. Con estas intrucciones resteteamos estilos por defecto en navegadores*/
+* {
+    box-sizing: border-box;  /*Suma el paddiing con el bording del elemento. Recalcula el padding y el bording*/
+    padding: 0%;
+    margin: 0%;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid gray;
+    padding: 20px 35px;
+
+}
