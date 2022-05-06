@@ -1,0 +1,19 @@
+/* COMBINADORES: */
+/* Quiero que coloque en Rojo los hemanos sercanos*/
+
+h2 + p { /*Combinador: Adjacent Sibiling  = Aplicar color Red a todas las etiquetas P serca a un H2  */
+    color: brown;
+}
+
+h4 ~ p {  /*Combinador: General Sibling = a las etiquetas p con un hermano General H4 poner color Morado*/
+    color: blueviolet;
+}
+
+/* del padre Div que sea mayor padre de una etiqueta b*/
+div > b {  /*Combinador: Hijo = la etiqueta B que sea hija directa de una etiqueta Div colocar color Yellow */
+    color: yellow;
+} 
+
+section li {  /* Combinador Decendiente  =  a todas las etiquetas de li dentro de un contenedor o etiqueta section poner color naranja*/
+    color: chocolate;
+}
