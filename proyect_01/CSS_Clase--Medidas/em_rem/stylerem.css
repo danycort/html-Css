@@ -1,0 +1,17 @@
+* {
+    box-sizing: content-box;
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    font-size: 62.5%; /*Estandar de medida rem (1.6 ram = 16px) */
+}
+
+p {
+    font-size: 2rem; /*Toma el valor de raiz en html 16px*/
+    /*6rem = 60px*/
+}
+
+main div {
+    font-size: 2rem;
+}

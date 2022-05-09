@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+main {
+    /*Usamos el vh y vw para indicar que 100% del view o pantalla.*/
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+section {
+    width: 80%;
+    min-width: 320px; /* Delimita el minimo de tamaño */
+    max-width: 500px; /* Delimita el tamaño maximo de crecimiento */
+    min-height: 500px;  /* altuta minima de 500 pero si tienes mas contenido crece hasta que el contenido deje de crecer */
+    margin: 0 auto; /* De ariiba a abajo no le pongas margen pero de los lados ajustalo de manera automatica  */
+    background-color: aqua;
+}

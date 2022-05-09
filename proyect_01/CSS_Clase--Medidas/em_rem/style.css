@@ -1,0 +1,13 @@
+
+body {
+    font-size: 20px;
+}
+
+
+.text-container {
+    font-size: 1em; /*Toma el tamaño directo del padre. en este caso es html = 24px*/
+}
+
+.text-container div {
+    font-size: 1.5em;
+}
