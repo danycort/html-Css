@@ -14,27 +14,41 @@ body {
 .container {
     border: .3rem solid black;
     display: flex;
+    flex-wrap: wrap;
+
+    /* height: 50vh; */    /*Mnatener la altura al 50% de mi pantalla*/
+    /* align-items: stretch;  */ /* Se estiran al 100% de la altura del contenedor padre*/
+    /* align-items: baseline; */  /* Tomara el tañaño del contenido dentro del contenedor y no del  cont. padre */
+
 }
 
 .box {
-    width: 10rem;
-    height: 10rem;
+    /* width: 10rem; */       /* Largo en rem (10px)*/
+    height: 10rem;      /*Alto en rem (10px)*/
+    flex-basis: 10rem;  /*La propiedad de CSS flex-basis especifíca la base flexible, la cual es el tamaño inicial de un elemento flexible.*/
+    flex-grow: 1;     /*Crecen 1 pocision. Se come el espacio que sobra llegado a su max tamaño.*/
+
 }
 
 .box1 {
     background-color: blue;
+    /* flex-grow: 1; */  /*Crece 1 posicion. Crece comforme de ajuste la pantalla pero al disminuir esta se ajusta la tamaño de los demas*/
 }
 .box2 {
     background-color:blueviolet;
+/*     order: 3;  */  /* Indicamos el lugar donde aparecera este container */
+    /* flex-grow: 1;  */  /*Crecen 1 pocision. Se come el espacio que sobra llegado a su max tamaño.*/
 }
 .box3 {
     background-color:brown;
+    /* order: 1; */   /* Indicamos el lugar donde aparecera este container */
 }
 .box4 {
     background-color:burlywood;
 }
 .box5 {
     background-color:cadetblue;
+    /* order: 2; */     /* Indicamos el lugar donde aparecera este container */
 }
 .box6 {
     background-color:chartreuse;
