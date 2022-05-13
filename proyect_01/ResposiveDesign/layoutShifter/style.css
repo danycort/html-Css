@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    display: flex;    /**/ 
+    flex-wrap: wrap;  /*Permiete que los div dentro se puedan reposicionar segun su tamaño*/
+}
+
+.c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;     
+}
+.c4 {
+    height: auto;
+}
+
+.c1 {
+    background-color: aqua;
+}
+
+.c2 {
+    background-color: burlywood;
+}
+
+.c3 {
+    background-color: cadetblue;
+}
+
+.c4 {
+    background-color: chartreuse;
+}
+
+.c5 {
+    background-color: chocolate;
+}
+
+
+@media (min-width:600px) {
+    .c1 {
+        width: 25%; 
+    }
+    .c4 {
+        width: 75%;
+    }
+    .c5 {
+        width: 100%;
+    }
+}
+
+@media (min-width:800px) {
+    .container {
+        width: 800px;
+       /*  margin-left: auto;
+        margin-right: auto; */
+        margin: 0 auto;     /*Esto dice. De arriba y abajo no genera margen, de los lados que sea auto. 
+        otra opcion a las dos de arriba. */
+    }
+
+    .c1 {
+        width: 50%;
+        order: 1; 
+    }
+    .c4 {
+        width: 100%;
+    }
+    .c5 {
+        width: 50%;
+        order: 2;
+    }
+}
