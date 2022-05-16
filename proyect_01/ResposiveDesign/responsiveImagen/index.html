@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img responsive</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p>Forma correcta de agregar imagenes responsive</p>
+    <p>imagen colocada sin la etiqueta correcta</p>
+    <main>
+        <div class="pic">
+            <img src="./fotos/Foto_Chica.jpg" alt="Imagen colocada sin etiqueta picture">
+        </div>
+    </main>
+    <p>imagen colocada con la etiqueta correcta (piicture) y responsiva</p>
+    <main>
+        <picture>
+            <source media="(min-width:900)" srcset="./fotos/Foto_Med.jpg">
+            <source media="(min-width:1100)" srcset="./fotos/Foto_Gran.jpg">
+            <img src="./fotos/Foto_Chica.jpg" alt="Imagen con etiqueta picture">
+        </picture>
+    </main>
+</body>
+</html>
